@@ -108,34 +108,8 @@ function main(){
     section03HoverEffect();
 
     $(window).on("scroll",function(){
-        console.log(winSc);
         navAct();
     });
-
-
-
-
-
-    // var $aa = $(".main_title_01");
-    // var $bb = $(".main_title_02");
-    // var $cc = $(".main_title_03");
-    // $("#section_01").mousemove(function (e) {
-    //     var topPageY = (e.pageY - winH * .9) * 40 / winH;
-    //     var leftPageX = (e.pageX - winW * .9) * 40 / winW;
-    //     TweenMax.set($aa, {
-    //         x: Math.round(leftPageX),
-    //         y: Math.round(topPageY)
-    //     });
-    //     TweenMax.set($bb, {
-    //         x: Math.round(-leftPageX),
-    //         y: Math.round(-topPageY)
-    //     });
-    //     TweenMax.set($cc, {
-    //         x: Math.round(-leftPageX * 3),
-    //         y: Math.round(-topPageY * 3)
-    //     });
-    // });
-
 
     var controller = new ScrollMagic.Controller();
 
@@ -222,18 +196,3 @@ function main(){
         //     name: "4"
         // })
 }
-gwd.actions.events.setInlineStyle('ending_logo', 'transition: all 0.1s linear; opacity: 1;');
-gwd.actions.events.setInlineStyle('container', 'transition: all 0.1s linear; opacity: 0;');
-gwd.actions.events.setInlineStyle('logo_out01', 'transition: all 0.15s linear; opacity: 1; transform: scale(1);');
-gwd.actions.events.setInlineStyle('logo_out02', 'transition: all 0.15s linear .23s; opacity: 1; transform: scale(1);');
-gwd.actions.events.setInlineStyle('logo_out03', 'transition: all 0.15s linear .43s; opacity: 1; transform: scale(1);');
-
-gwd.actions.events.setInlineStyle('logo_out_wrap', 'transition: all 0.15s linear 3s; opacity: 0; transform: scale(0);');
-
-
-
-
-
-gwd.actions.events.setInlineStyle('logo_out01', 'transition: all .3s ease-out 1s; transform: scale(1); opacity: 1;');
-
-gwd.actions.events.setInlineStyle('logo_out_wrap', 'transition: all .3s ease-out 3.2s; transform: scale(0) translateY(155px); opacity: 0;');
